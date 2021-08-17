@@ -12,14 +12,14 @@ class Team
     self.draw = draw
   end
   
+  
  def calc_win_rate(win,lose)
    rate = win.to_f / (win += lose)
    return rate
  end 
  
- 
   def show_team_result
- puts "#{self.name}の2020年の成績は#{self.win}勝#{self.lose}敗#{self.draw}分、勝率は#{rate}です。"
+ puts "#{self.name}の2020年の成績は#{self.win}勝#{self.lose}敗#{self.draw}分、勝率は#{calc_win_rate(win,lose)}です。"
   end
 end
 
